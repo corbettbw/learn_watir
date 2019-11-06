@@ -13,6 +13,3 @@ browser.select_list(:id => "order_pay_type").select "Check"
 browser.button(:value => 'Place Order').click
 
 fail 'Browser text did not match expected value' unless browser.text.include? 'Thank you for adopting a puppy!'
-
-# sleep 5
-# browser.close
